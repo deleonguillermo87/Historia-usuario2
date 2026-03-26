@@ -33,7 +33,11 @@ def agregar_producto(inventario):
         except ValueError:
             print("Error: Debe ingresar un número entero válido para la cantidad.")
 
-    producto = {"nombre": nombre, "precio": precio, "cantidad": cantidad}
+    producto = {
+    "nombre": nombre, 
+    "precio": precio, 
+    "cantidad": cantidad
+    }
     inventario.append(producto)
 
     print("Producto agregado con exito!")
